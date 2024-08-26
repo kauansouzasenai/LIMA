@@ -1,0 +1,66 @@
+/* Remove margens e preenchimentos padrão de todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Inclui bordas e preenchimentos no tamanho total do elemento */
+}
+
+/* Define a cor de fundo e a fonte padrão para o corpo da página */
+body {
+  background-color: #f8f8ff; /* Branco Gelo */
+  font-family: Arial, sans-serif;
+  color: #4a4a4a; /* Cinza Escuro */
+}
+
+/* Remove bordas padrão de elementos de formulários */
+input,
+textarea,
+select,
+button {
+  border: none;
+  outline: none;
+}
+
+/* Remove bordas de tabelas e define um espaçamento padrão */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Remove bordas e estiliza links */
+a {
+  text-decoration: none; /* Remove o sublinhado */
+  color: #ff6347; /* Vermelho Tomate */
+}
+
+/* Estiliza a barra de navegação */
+nav {
+  background-color: #333333; /* Cinza Escuro Intenso */
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav a {
+  color: #ffffff; /* Branco */
+}
+
+/* Estiliza cabeçalhos */
+header h1 {
+  color: #4a4a4a; /* Cinza Escuro */
+}
+
+/* Estiliza rodapé */
+footer {
+  background-color: #4a4a4a; /* Cinza Escuro */
+  color: #ffffff; /* Branco */
+  text-align: center;
+  padding: 10px;
+}
