@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Cadastro aluno</h1>
+    <form action="#" method="get">
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" required />
+
+      <br />
+      <br />
+
+      <label for="idade">Idade:</label>
+      <input type="number" name="idade" id="idade" min="0" max="120" required />
+
+      <br />
+      <br />
+
+      <label for="uploadDeArquivo">Upload de Arquivo:</label>
+      <input type="file" name="uploadDeArquivo" id="uploadDeArquivo" required />
+
+      <br />
+      <br />
+
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required />
+
+      <br />
+      <br />
+
+      <label for="senha">Senha:</label>
+      <input type="password" name="senha" id="senha" required />
+
+      <br />
+      <br />
+
+      <label for="dataDeNascimento">Data de nascimento:</label>
+      <input
+        type="date"
+        name="dataDeNascimento"
+        id="dataDeNascimento"
+        required
+      />
+
+      <br />
+      <br />
+
+      <label for="telefone">Telefone:</label>
+      <input
+        type="tel"
+        name="telefone"
+        id="telefone"
+        placeholder="(XX) XXXXX-XXXX"
+      />
+
+      <br />
+      <br />
+
+      <input type="radio" name="sexo" id="feminino" required />
+      <label for="gênero">feminino</label>
+
+      <input type="radio" name="sexo" id="masculino" required />
+      <label for="gênero">masculino</label>
+
+      <br />
+      <br />
+
+      <label for="estado">Estado:</label>
+      <select name="estado" id="estado" required>
+        <option>Selecione um estado</option>
+        <option value="São_paulo">São paulo</option>
+        <option value="Rio_de_janeiro">Rio de janeiro</option>
+        <option value="Pernambuco">Pernambuco</option>
+        <option value="Amazonas">Amazonas</option>
+      </select>
+
+      <br />
+      <br />
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+
+      <br />
+      <br />
+
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>

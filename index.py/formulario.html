@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <!-- Início do formulário -->
+    <form action="#" method="get">
+      <!-- Campo de entrada para nome -->
+      <label for="nome">Nome:</label>
+      <input
+        type="text"
+        name="nome"
+        id="nome"
+        placeholder="Digite seu nome"
+        required
+      />
+      <!-- Type: Tipo de entrada -->
+      <!-- name: Nome do campo que será enviado com o formulário -->
+      <!-- ID: Identificador único para o campo, usado pelo <label> -->
+      <!-- placeholder: Texto exibido dentro do campo quando vazio -->
+      <!-- required: Indica que o campo é obrigatório -->
+      <br />
+      <br />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Digite seu email"
+        required
+      />
+      <!-- Type: Tipo de entrada -->
+      <!-- name: Nome do campo que será enviado com o formulário -->
+      <!-- ID: Identificador único para o campo, usado pelo <label> -->
+      <!-- placeholder: Texto exibido dentro do campo quando vazio -->
+      <!-- required: Indica que o campo é obrigatório -->
+      <br />
+      <br />
+
+      <label for="password">Senha:</label>
+      <!-- codigo que cria um campo de senha -->
+      <input type="password" name="password" id="password" />
+      <!-- campo para colocar a senha -->
+
+      <br />
+      <br />
+
+      <label for="idade">Idade:</label>
+      <!-- codigo que cria o campo de idade -->
+      <input type="number" name="idade" id="idade" min="18" max="60" />
+      <!-- Campo para colocar a idade -->
+
+      <br />
+      <br />
+
+      <label for="imgPerfil">Imagem Perfil:</label>
+      <!-- Criador do campo imagem de perfil -->
+      <input type="file" name="imgPerfil" id="imgPerfil" />
+      <!-- campo para colocar a imagem de perfil -->
+
+      <br />
+      <br />
+
+      <label for="imgProdutos">Imagem Produtos:</label>
+      <!-- Criador do campo imagem produtos -->
+      <input type="file" name="imgProdutos" id="imgProdutos" multiple />
+      <!-- Campo para colocar a imagem produtos -->
+
+      <br />
+      <br />
+
+      <label for="phone">Telefone:</label>
+      <!-- Criador do campo de telefone -->
+      <input type="tel" name="phone" id="phone" minlength="11" maxlength="15" />
+      <!-- campo para colocar seu numero de telefone -->
+
+      <br />
+      <br />
+
+      <label for="valorProduto">Valor:</label>
+      <!-- criador do campo de valor -->
+      <input
+        type="number"
+        name="valorProduto"
+        id="valorProduto"
+        min="0"
+        step="0.010"
+      />
+      <!-- Campo para colocar o valor do produto -->
+      <br />
+      <br />
+
+      <label for="cor_favorita">Cor favorita:</label>
+      <!-- criador do botão para escolher sua cor favorit -->
+      <input type="color" name="cor_favorita" id="cor_favorita" />
+      <!-- botao para escolher sua cor favorita -->
+
+      <br />
+      <br />
+
+      <input type="checkbox" name="Basquete" id="Basquete" />
+      <!-- criador da opção basquete -->
+      <label for="Basquete">Basquete</label>
+      <!-- opção para escolher a modalidade esportiva -->
+
+      <input type="checkbox" name="ping_pong" id="ping_pong" />
+      <!-- criador da opção ping pong -->
+      <label for="ping_pong">Ping Pong</label>
+      <!-- opção para escolher a modalidade esportiva -->
+
+      <br />
+      <br />
+
+      <input type="radio" name="sexo" id="feminino" value="feminino" />
+      <!-- Criador das opções de sexo -->
+      <label for="feminino">Feminino</label>
+      <!-- opção de sexo -->
+
+      <input type="radio" name="sexo" id="masculino" value="masculino" />
+      <!-- criados dos botões de sexo -->
+      <label for="masculino">Masculino</label>
+      <!-- opção para escolher seu sexo -->
+      <br />
+      <br />
+
+      <label for="country">Pais:</label>
+      <!-- criador do campo para você escolher seu país -->
+      <select name="country" id="country">
+        <option value="Brasil">Brasil</option>
+        <option value="EUA">EUA</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Alemanha">Alemanha</option>
+      </select>
+      <!-- campo para escolher seu país de moradia -->
+
+      <br />
+      <br />
+
+      <label for="descricao">Descrição:</label>
+      <!-- criador do campo -->
+      <textarea
+        id="descricao"
+        name="descricao"
+        placeholder="Digite uma breve descrição sobre você!"
+        required
+      ></textarea>
+      <!-- campo para descrição -->
+
+      <br />
+      <br />
+
+      <input type="submit" value="Enviar Formulário" />
+      <!-- Botao para enviar seu formulario -->
+    </form>
+  </body>
+</html>
